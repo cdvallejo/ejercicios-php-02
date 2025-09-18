@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.carta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    color: green;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.producto-carta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto-carta div {
+    padding: 5px;
+}

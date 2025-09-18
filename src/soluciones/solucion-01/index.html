@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicios PHP - Relación 1</h1>
+        <h3>Alumno: Carlos D. Vallejo Aranda</h3>
+        <img src="../../img/yo-42-avatar-centrado.jpg" alt="">
+    </header>
+    <main>
+        <div class="ejercicio">
+            <h2>Ejercicio 1</h2>
+            <p>Una empresa que sirve comida vegetariana a domicilio necesita una aplicación para que los
+                clientes puedan hacer sus pedidos por internet. La primera versión incluirá cuatro comidas y
+                tres bebidas. A continuación se muestra una tabla con las diferentes opciones y precios.</p>
+            <table>
+                <tr>
+                    <th>Hamburguesa vegetariana</th>
+                    <th>Pasta al pesto</th>
+                    <th>Piazza caprese</th>
+                    <th>Quinoa con verdura</th>
+                    <th>Agua</th>
+                    <th>Cerveza</th>
+                    <th>Refresco</th>
+                </tr>
+                <tr>
+                    <td>6.95</td>
+                    <td>8.50</td>
+                    <td>7.90</td>
+                    <td>9.20</td>
+                    <td>1.20</td>
+                    <td>1.80</td>
+                    <td>1.80</td>
+                </tr>
+            </table>
+            <p>Un pedido puede contener varias comidas del mismo o de distinto tipo y también varias bebidas.</p>
+            <p>La pantalla con el resultado ha de desglosar el PVP de cada producto, la cantidad, el subtotal, el IVA y
+                el precio total.</p>
+
+            <div class="carta">
+                <h2>Pide la comida más sana a domicilio</h2>
+
+                <form action="pedido.php" method="post">
+
+                    <div class="producto-carta">
+                        <figure>
+                            <img src="img/hamburguesa.png" width="200px" alt="Hamburguesa vegetariana">
+                            <figcaption>Hamburguesa vegetariana</figcaption>
+                            <input type="number" name="pedido1" value="0" min="0">
+                        </figure>
+
+                        <figure>
+                            <img src="img/pasta.png" width="200px" alt="Pasta al pesto">
+                            <figcaption>Pasta al pesto</figcaption>
+                            <input type="number" name="pedido2" value="0" min="0">
+                        </figure>
+
+                        <figure>
+                            <img src="img/pizza.png" width="200px" alt="Pizza caprese">
+                            <figcaption>Pizza caprese</figcaption>
+                            <input type="number" name="pedido3" value="0" min="0">
+                        </figure>
+
+                        <figure>
+                            <img src="img/quinoa.png" width="200px" alt="Quinoa con verdura">
+                            <figcaption>Quinoa con verdura</figcaption>
+                            <input type="number" name="pedido4" value="0" min="0">
+                        </figure>
+                    </div>
+
+                    <div class="producto-carta">
+                        <figure>
+                            <img src="img/agua.png" width="100px" alt="Agua">
+                            <figcaption>Agua</figcaption>
+                            <input type="number" name="pedido5" value="0" min="0">
+                        </figure>
+
+                        <figure>
+                            <img src="img/cerveza.png" width="100px" alt="Cerveza">
+                            <figcaption>Cerveza</figcaption>
+                            <input type="number" name="pedido6" value="0" min="0">
+                        </figure>
+
+                        <figure>
+                            <img src="img/refresco.png" width="100px" alt="Refresco">
+                            <figcaption>Refresco</figcaption>
+                            <input type="number" name="pedido7" value="0" min="0">
+                        </figure>
+                    </div>
+
+                    <br><br>
+                    <div class="producto-carta">
+                        <button style="text-align: center" name="pedido-realizado" type="submit">Hacer pedido</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="volver">
+        <a href="../../index.html">Página principal</a>
+    </div>
+
+</body>
+
+</html>
