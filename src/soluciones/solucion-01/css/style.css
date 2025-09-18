@@ -5,6 +5,7 @@ table {
 td, th {
     border: 2px solid white;
     padding: 20px;
+    text-align: center;
 }
 
 .carta {
@@ -16,7 +17,6 @@ td, th {
     width: 65%;
     align-items: center;
     justify-content: center;
-   
 }
 
 .producto-carta {
