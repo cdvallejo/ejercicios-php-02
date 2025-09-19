@@ -39,6 +39,7 @@
           "Refresco" => $pedido7,
         ];
 
+        # php elimina en los float el cero final, por eso luego usamos number_format()
         $precios = [
           "Hamburguesa vegetariana" => 6.95,
           "Pasta al pesto" => 8.50,
@@ -62,23 +63,28 @@
 
           $subtotal = 0;
           $total = 0;
+          $precioSinIva = 0;
           foreach ($pedidos as $producto => $cantidad) {
             if ($cantidad > 0) {
               $subtotal = $cantidad * $precios[$producto];
               $total += $subtotal;
               echo "<tr>";
               echo "<td>$producto</td>";
-              echo "<td>", $precios[$producto], " €</td>";
+              echo "<td>", number_format($precios[$producto], 2), " €</td>"; 
               echo "<td>$cantidad</td>";
-              echo "<td>", $subtotal, " €</td>";
+              echo "<td>", number_format($subtotal, 2), " €</td>";
               echo "</tr>";
             }
           }
+          $baseImponible = $total / 1.21;
+          $iva = $total - $baseImponible;
           ?>
           </tr>
         </table>
-        <h3>Total: <?= $total ?> €</h3>
-        <h4>Precio sin IVA (21%): <?= $subtotal ?> €</h4>
+        
+        <h3>Total: <?= number_format($total, 2) ?> €</h3> <!-- number_format redondea y fuerza para que haya dos decimales (round no fuerza los dos decimales -->
+        <h4>Base imponible: <?= number_format($baseImponible, 2) ?> €</h4>
+        <h4>IVA (21%): <?= number_format($iva, 2) ?> €</h4>
       <?php
       }
       ?>
