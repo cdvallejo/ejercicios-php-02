@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicios PHP - Relación 2</h1>
+        <h3>Alumno: Carlos D. Vallejo Aranda</h3>
+        <img src="../../img/yo-42-avatar-centrado.jpg" alt="">
+    </header>
+    <main>
+        <div class="ejercicio">
+            <h2>Ejercicio 2</h2>
+            <p>Crea el juego “Apuesta y gana”. El usuario debe introducir inicialmente una cantidad de
+                dinero. A continuación aparecerá por pantalla una imagen de forma aleatoria. Si sale una
+                calavera, el usuario pierde todo su dinero y termina el juego. Si sale medio limón, el usuario
+                pierde la mitad del dinero y puede seguir jugando con esa cantidad o puede dejar de jugar. Si
+                sale el gato chino de la suerte, el usuario multiplica por dos su dinero y puede seguir jugando
+                con esa cantidad o puede dejar de jugar.</p>
+
+            <form action="juego-apuesta.php" method="post">
+                <label for="apuesta">Por favor, introduzca la cantidad que quiere apostar:</label>
+                <br>
+                <input type="number" name="apuesta" min="1" required> €
+                <br>
+                <input type="submit" name="comenzar" value="Aceptar">
+            </form>
+        </div>
+    </main>
+
+    <div class="volver">
+        <a href="../../index.php">Página principal</a>
+    </div>
+
+</body>
+
+</html>

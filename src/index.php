@@ -1,3 +1,10 @@
+<?php
+if (isset($_POST["apuesta"])) {
+    require("soluciones/solucion-02/reset.php");
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,8 +33,10 @@
     </main>
 
     <footer>
-        <p><h4>Desarrollo de aplicaciones web en el entorno servidor y Desarrollo de aplicaciones web distribuidas
-            </h4></p>
+        <p>
+        <h4>Desarrollo de aplicaciones web en el entorno servidor y Desarrollo de aplicaciones web distribuidas
+        </h4>
+        </p>
         <p>Profesor: Luis José Sánchez González</p>
         <p>CPIFP Alan Turing (PTA Málaga)</p>
         <p>Certificado Profesional Nivel 3: Desarrollo de Aplicaciones con Tecnología Web (IFCD2010)</p>
