@@ -25,6 +25,7 @@
         <h1>Apuesta y gana</h1>
         <h3>¡Ha conseguido: <?= $_SESSION["apuesta"] ?> €!</h3>
         <img src="img/win.png" alt="turboabuela win">
+        <br><br>
         <a href="reset.php"><button>Volver a jugar</button></a>
         <br>
       </form>
