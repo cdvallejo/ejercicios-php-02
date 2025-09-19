@@ -56,7 +56,7 @@ if (isset($_POST["apuesta"])) {
         echo "Lo siento, has perdido";
       ?>
         <form action="index.html" method="post">
-          <a href="reset.php"><button>Volver a</button></a>
+          <a href="reset.php"><button>Volver a juego</button></a>
           <br>
         </form>
       <?php
