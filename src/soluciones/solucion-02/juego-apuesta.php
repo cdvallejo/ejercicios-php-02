@@ -42,6 +42,7 @@ if (isset($_POST["apuesta"])) {
           echo "<h3>Ahora tiene ", $_SESSION["apuesta"], " €</h3>";
           echo "<img src='img/turboabuela.jpg' alt='turboabuela'>";
         }
+        echo "<b><br>Si continúa, puede doblar lo que tiene, reducirlo a la mitad o perderlo todo...</b>"
       ?> <!-- Formulario para continuar el juego o plantarse -->
         <form action="juego-apuesta.php" method="post">
           <input type="submit" name="sigoJugando" value="Sigo jugando">
@@ -53,7 +54,7 @@ if (isset($_POST["apuesta"])) {
       <?php
       } else { // Ha salido calavera
         echo "<img src='img/calavera.png' alt='calavera'>";
-        echo "Lo siento, has perdido";
+        echo "Lo siento, has perdido...";
       ?>
         <form action="index.html" method="post">
           <a href="reset.php"><button>Volver a juego</button></a>
