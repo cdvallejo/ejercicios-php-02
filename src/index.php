@@ -12,7 +12,7 @@ if (isset($_POST["apuesta"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Ejercicios PHP - Relación 1</title>
+    <title>Ejercicios PHP - Relación 2</title>
 </head>
 
 <body>

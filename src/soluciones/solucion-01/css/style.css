@@ -30,3 +30,17 @@ td, th {
 .producto-carta div {
     padding: 5px;
 }
+
+@media screen and (max-width: 600px) {
+    .ejercicio table {
+        font-size: 12px;
+    }
+    .ejercicio th, .ejercicio td {
+        padding: 5px;
+    }
+
+    .carta {
+        width: 70%;
+        text-align: center;
+    }
+}
