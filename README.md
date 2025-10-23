@@ -5,7 +5,7 @@
 * **Certificado de Desarrollo de Aplicaciones con Tecnología Web (IFCD2010)**, impartido por el **CPIFP Alan Turing**.
 * Profesor: Luis José Sánchez González.
 
-Puedes probar los ejercicios en este [enlace al repo web](https://www.carlos-vallejo.com/programacion/alan-turing/ejercicios-php-02/src/).
+👉 Puedes probar los ejercicios en este [enlace al repo web](https://www.carlos-vallejo.com/programacion/alan-turing/ejercicios-php-02/src/).
 
 Dale una ⭐ a este repo si te ha gustado.
 
